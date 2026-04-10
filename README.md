@@ -5,7 +5,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Bu proje, bir e-posta gönderim servisini temel alarak **kurumsal mimari prensipleri**, **hata toleransı** ve **modern DevOps araçları** ile nasıl güçlendirilebileceğini gösteren bir "Masterpiece" (Şaheser) repodur.
+Bu proje, bir e-posta gönderim servisini temel alarak **kurumsal mimari prensipleri**, **hata toleransı** ve **modern DevOps araçları** ile nasıl güçlendirilebileceğini gösteren bir "Masterpiece" repodur.
 
 ## 🌟 Öne Çıkan Özellikler
 
@@ -92,4 +92,3 @@ Eğer SMTP sunucusuna bağlanılamazsa:
 3. Bu sayede hiçbir mesaj kaybolmaz ve daha sonra manuel olarak incelenebilir veya tekrar işleme alınabilir.
 
 ---
-*Bu proje eğitim amaçlı geliştirilmiş bir "Masterpiece" çalışmasıdır.*

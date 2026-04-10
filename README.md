@@ -12,7 +12,7 @@ Bu proje, bir e-posta gönderim servisini temel alarak **kurumsal mimari prensip
 - **DLQ & Retry Mekanizması:** E-posta gönderimi başarısız olursa sistem otomatik olarak 3 kez tekrar dener. Başarı sağlanamazsa mesaj veri kaybını önlemek için **Dead Letter Queue (DLQ)**'ya aktarılır.
 - **Thymeleaf HTML Şablonları:** Sade metinler yerine modern, logolu ve kurumsal tasarımlı HTML e-postalar gönderilir.
 - **Strict Validation:** API'ye gelen tüm istekler Hibernate Validator ile sıkı bir denetimden geçer. Geçersiz e-posta formatları anında reddedilir.
-- **Global Exception Handling:** Tüm hatalar standart ve açıklayıcı bir JSON formatında kullanıcıya sunulur.
+- **Global Exception Handling:** Tüm hatalar standart ve açıklayıcı bir JSON formatında kullanıcılara sunulur.
 - **Dockerized Architecture:** Uygulama ve RabbitMQ altyapısı tek bir komutla (`docker-compose up`) ayağa kaldırılabilir.
 
 ## 🏗️ Mimari Şema
@@ -92,3 +92,4 @@ Eğer SMTP sunucusuna bağlanılamazsa:
 3. Bu sayede hiçbir mesaj kaybolmaz ve daha sonra manuel olarak incelenebilir veya tekrar işleme alınabilir.
 
 ---
+*Bu proje eğitim amaçlı geliştirilmiş bir "Masterpiece" çalışmasıdır.*

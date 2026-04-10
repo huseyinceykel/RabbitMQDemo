@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Posta Bildirimi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #4A90E2;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            padding: 30px;
+            line-height: 1.6;
+            color: #333333;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #f4f7f6;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4A90E2;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Yeni Bir Bildiriminiz Var!</h1>
+        </div>
+        <div class="content">
+            <p>Merhaba,</p>
+            <p><strong th:text="${subject}">Konu Başlığı</strong> konulu yeni bir mesaj aldınız:</p>
+            <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #4A90E2;">
+                <p th:text="${body}">Burada mesaj içeriği yer alacak.</p>
+            </div>
+            <p>Detayları incelemek için aşağıdaki butona tıklayabilirsiniz:</p>
+            <p style="text-align: center;">
+                <a href="https://github.com/huseyin" class="button">Detayları Gör</a>
+            </p>
+        </div>
+        <div class="footer">
+            Bu e-posta <strong>RabbitMQ & Spring Boot</strong> Demo Projesi üzerinden otomatik olarak gönderilmiştir.<br>
+            &copy; 2024 Masterpiece Email Service
+        </div>
+    </div>
+</body>
+</html>
